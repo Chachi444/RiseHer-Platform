@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RiseHer — Sign Up</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="signin-page">
+  <main class="signin-card" role="main" aria-labelledby="signup-title">
+    <h1 class="signin-title" id="signup-title">Create Account</h1>
+    <p class="signin-sub"><strong>Create an account to access mentorship, visibility and safety tools</strong></p>
+
+    <div class="social-row" role="list">
+      <a class="pill pill-fb" href="#" role="listitem" aria-label="Sign up with Facebook">
+        <img src="facebook.png" alt="Facebook" class="pill-icon" onerror="this.style.display='none'">
+        <span>Facebook</span>
+      </a>
+
+      <a class="pill pill-google" href="#" role="listitem" aria-label="Sign up with Google">
+        <img src="Google.png" alt="Google" class="pill-icon" onerror="this.style.display='none'">
+        <span>Google</span>
+      </a>
+    </div>
+
+    <div class="or-sep" aria-hidden="true">
+      <span class="line"></span>
+      <span class="or-circle">or</span>
+      <span class="line"></span>
+    </div>
+
+    <form id="signupForm" class="signin-form" novalidate>
+      <input id="su-username" class="input-large" type="text" placeholder="Username" autocomplete="username" required>
+      <input id="su-email" class="input-large" type="email" placeholder="Email address" autocomplete="email" required>
+      <input id="su-password" class="input-large" type="password" placeholder="Password" autocomplete="new-password" required>
+      <input id="su-confirm" class="input-large" type="password" placeholder="Confirm password" autocomplete="new-password" required>
+
+      <button class="cta-full" type="submit">Create Account</button>
+      
+      <div class="signup-row" style="margin-top:12px;font-size:0.95rem;">
+        Already have an account? <a class="link" href="sign-in.html">Sign in</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="index.js" defer></script>
+</body>
+</html>

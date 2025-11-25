@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stories — RiseHer</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section>
+    <div class="nav-bar">
+    <div class="brand">
+      <img src="logo1.png" alt="RiseHer Logo" class="logo">
+      <h1>RiseHer</h1>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Us</a></li>
+      <li><a href="#programs">Programs</a></li>
+      <li><a href="#events">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  </section>
+
+  <section class="story-hero">
+    <div class="container">
+      <h1>Stories of women<br><span class="accent">Rising</span></h1>
+      <p class="lead">Real stories of leadership, resilience and impact. Search and filter to discover voices that inspire.</p>
+
+      <div class="search-wrap">
+        <label class="sr-only" for="story-search">Search stories</label>
+        <input id="story-search" class="search" type="search" placeholder="Search stories, names or keywords">
+      </div>
+
+      <div class="filters" role="toolbar" aria-label="Story filters">
+        <label class="filter-label" for="filter-country">
+          <span class="sr-only">Country</span>
+          <select id="filter-country" class="filter-select" aria-label="Filter by country">
+            <option value="">All Countries</option>
+            <option value="kenya">Kenya</option>
+            <option value="nigeria">Nigeria</option>
+            <option value="south-africa">South Africa</option>
+            <option value="ghana">Ghana</option>
+          </select>
+        </label>
+
+        <label class="filter-label" for="filter-age">
+          <span class="sr-only">Age Group</span>
+          <select id="filter-age" class="filter-select" aria-label="Filter by age group">
+            <option value="">All Ages</option>
+            <option value="under-25">Under 25</option>
+            <option value="25-34">25–34</option>
+            <option value="35-44">35–44</option>
+            <option value="45-plus">45+</option>
+          </select>
+        </label>
+
+        <label class="filter-label" for="filter-industry">
+          <span class="sr-only">Industry</span>
+          <select id="filter-industry" class="filter-select" aria-label="Filter by industry">
+            <option value="">All Industries</option>
+            <option value="politics">Politics</option>
+            <option value="business">Business</option>
+            <option value="tech">Technology</option>
+            <option value="civil-society">Civil Society</option>
+          </select>
+        </label>
+      </div>
+    </div>
+  </section>
+
+  <main class="story-list container">
+    <article class="story-card">
+      <div class="photo" aria-hidden="false">
+        <img src="woman.jpg" alt="Featured story image" onerror="this.style.display='none'">
+      </div>
+      <div class="story-content">
+        <h3>Title of story one</h3>
+        <p class="meta">Short excerpt or summary about this leader's journey and achievements.</p>
+      </div>
+    </article>
+
+    <article class="story-card">
+      <div class="photo" aria-hidden="false">
+        <img src="woman.jpg" alt="Featured story image" onerror="this.style.display='none'">
+      </div>
+      <div class="story-content">
+        <h3>Title of story two</h3>
+        <p class="meta">Short excerpt or summary about this leader's journey and achievements.</p>
+      </div>
+    </article>
+
+    <article class="story-card">
+      <div class="photo" aria-hidden="false">
+        <img src="woman.jpg" alt="Featured story image" onerror="this.style.display='none'">
+      </div>
+      <div class="story-content">
+        <h3>Title of story three</h3>
+        <p class="meta">Short excerpt or summary about this leader's journey and achievements.</p>
+      </div>
+    </article>
+  </main>
+
+  <script src="index.js" defer></script>
+</body>
+</html>

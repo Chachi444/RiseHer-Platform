@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RiseHer — Sign In</title>
+
+  <link rel="stylesheet" href="index.css">
+</head>
+<body class="signin-page">
+  <main class="signin-card" role="main" aria-labelledby="signin-title">
+    <h1 class="signin-title" id="signin-title">Sign-In</h1>
+    <p class="signin-sub"><strong>Sign up with your social media account or username</strong></p>
+
+    <div class="social-row" role="list">
+      <a class="pill pill-fb" href="#" role="listitem" aria-label="Sign in with Facebook">
+        <img src="facebook.png" alt="Facebook" class="pill-icon" onerror="this.style.display='none'">
+        <span>Facebook</span>
+      </a>
+
+      <a class="pill pill-google" href="#" role="listitem" aria-label="Sign in with Google">
+        <img src="google.png" alt="Google" class="pill-icon" onerror="this.style.display='none'">
+        <span>Google</span>
+      </a>
+    </div>
+
+    <div class="or-sep" aria-hidden="true">
+      <span class="line"></span>
+      <span class="or-circle">or</span>
+      <span class="line"></span>
+    </div>
+
+    <form id="signinForm" class="signin-form" novalidate>
+      <input id="username" class="input-large" type="text" placeholder="Username" autocomplete="username" required>
+      <input id="password" class="input-large" type="password" placeholder="Password" autocomplete="current-password" required>
+
+      <button class="cta-full" type="submit">Sign In</button>
+      <div class="signup-row" style="margin-top:12px;font-size:0.95rem;">
+        Don't have an account? <a class="link" href="sign-up.html">Sign up</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="index.js" defer></script>
+</body>
+</html>
