@@ -43,26 +43,25 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Image fallback for social pill icons: replace broken <img> with a small text badge
-  // Replace broken .pill-icon images with a styled text fallback
+  
   document.querySelectorAll('.pill-icon').forEach(function (img) {
     function makeFallback() {
-      // create a small badge showing first letter of alt text (or "G" for Google)
+      
       const alt = (img.alt || '').trim();
       const letter = alt ? alt.charAt(0).toUpperCase() : '?';
       const span = document.createElement('span');
       span.className = 'pill-icon-fallback';
       span.setAttribute('aria-hidden', 'true');
       span.textContent = letter;
-      // copy some spacing/role so layout is preserved
+      
       img.replaceWith(span);
     }
-    // if browser already reported error, run fallback
+    
     if (img.complete && img.naturalWidth === 0) {
       makeFallback();
       return;
     }
-    // on load error, use fallback
+    
     img.addEventListener('error', makeFallback, { once: true });
   });
 
